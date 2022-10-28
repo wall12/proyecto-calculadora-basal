@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    background-color: #08A79F;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("fondo-hospital.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#contenedor{
+    background-color: rgb(255, 255, 255);
+    width: 920px;
+    height: 500px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(1,2,3,4.5), 
+    0 14px 28px rgba(1,2,3,4.5);
+}
+
+#calculadora{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#detalle{
+    background-color: rgb(27, 178, 184);
+    color: rgba(255, 255, 255, 0.767);
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.contenido{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    background-color: #eee;
+    border:none;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: rgb(27, 178, 184);
+    border: 1px solid black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+.resultado{
+    color: rgb(27, 178, 184);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
